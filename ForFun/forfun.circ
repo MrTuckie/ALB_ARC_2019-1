@@ -1099,6 +1099,22 @@ end TCL_Generic;
     <comp lib="0" loc="(200,310)" name="Pin">
       <a name="label" val="Reset"/>
     </comp>
+    <comp lib="8" loc="(324,108)" name="Text">
+      <a name="text" val="Exemplo de circuito responsavel por incrementar PC em 4"/>
+      <a name="font" val="SansSerif plain 12"/>
+    </comp>
+    <comp lib="8" loc="(322,127)" name="Text">
+      <a name="text" val="Serve para seguir com as próximas instrucoes na memoria"/>
+      <a name="font" val="SansSerif plain 12"/>
+    </comp>
+    <comp lib="8" loc="(208,77)" name="Text">
+      <a name="text" val="fetch = buscar/trazer"/>
+      <a name="font" val="SansSerif plain 12"/>
+    </comp>
+    <comp lib="8" loc="(670,186)" name="Text">
+      <a name="text" val="nao precisaremos colocar na main. eh so um exemplo"/>
+      <a name="font" val="SansSerif plain 12"/>
+    </comp>
   </circuit>
   <circuit name="PC">
     <a name="circuit" val="PC"/>
@@ -1225,15 +1241,7 @@ end TCL_Generic;
       <a name="font" val="SansSerif plain 12"/>
     </comp>
     <comp lib="8" loc="(721,264)" name="Text">
-      <a name="text" val="the 3rd value appears (c = 12 = 4x3)"/>
-      <a name="font" val="SansSerif plain 12"/>
-    </comp>
-    <comp lib="8" loc="(182,166)" name="Text">
-      <a name="text" val="0xc goes in"/>
-      <a name="font" val="SansSerif plain 12"/>
-    </comp>
-    <comp lib="8" loc="(297,157)" name="Text">
-      <a name="text" val="0 e 1 sao o &quot;offset bi&quot;"/>
+      <a name="text" val="Sai o terceiro valor pois c = 12 = 4 x 3 "/>
       <a name="font" val="SansSerif plain 12"/>
     </comp>
     <comp lib="8" loc="(36,201)" name="Text">
@@ -1248,8 +1256,40 @@ end TCL_Generic;
       <a name="text" val="32bit"/>
       <a name="font" val="SansSerif plain 12"/>
     </comp>
-    <comp lib="8" loc="(520,163)" name="Text">
+    <comp lib="8" loc="(468,82)" name="Text">
+      <a name="text" val="Essa daqui eh onde as instrucoes ficam armazenadas"/>
+      <a name="font" val="SansSerif plain 12"/>
+    </comp>
+    <comp lib="8" loc="(487,94)" name="Text">
+      <a name="text" val="quem chama essas instrucoes eh o Program Counter (PC) usando um endereco de 32bit"/>
+      <a name="font" val="SansSerif plain 12"/>
+    </comp>
+    <comp lib="8" loc="(475,162)" name="Text">
       <a name="text" val="2 to the power of 24 is 16777215"/>
+      <a name="font" val="SansSerif plain 12"/>
+    </comp>
+    <comp lib="8" loc="(168,162)" name="Text">
+      <a name="text" val="Exemplo: entra 0xc"/>
+      <a name="font" val="SansSerif plain 12"/>
+    </comp>
+    <comp lib="8" loc="(293,176)" name="Text">
+      <a name="text" val="0 e 1 sao o &quot;offset bit&quot;"/>
+      <a name="font" val="SansSerif plain 12"/>
+    </comp>
+    <comp lib="8" loc="(154,473)" name="Text">
+      <a name="text" val="26 - 31 nao importam"/>
+      <a name="font" val="SansSerif plain 12"/>
+    </comp>
+    <comp lib="8" loc="(463,886)" name="Text">
+      <a name="text" val="endereco - instrucao"/>
+      <a name="font" val="SansSerif plain 12"/>
+    </comp>
+    <comp lib="8" loc="(821,307)" name="Text">
+      <a name="text" val="Usa-se memoria ROM, ou seja, ela so pode ser lida. (Read Only Memory),"/>
+      <a name="font" val="SansSerif plain 12"/>
+    </comp>
+    <comp lib="8" loc="(791,329)" name="Text">
+      <a name="text" val="Pressupoe-se que as instrucoes ja estejam previamente salvas"/>
       <a name="font" val="SansSerif plain 12"/>
     </comp>
   </circuit>
