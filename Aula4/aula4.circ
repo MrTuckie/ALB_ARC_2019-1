@@ -132,33 +132,20 @@ end TCL_Generic;
     <a name="circuitnamedbox" val="true"/>
     <a name="circuitvhdlpath" val=""/>
   </circuit>
-  <circuit name="DataMemory">
-    <a name="circuit" val="DataMemory"/>
+  <circuit name="AluControl">
+    <a name="circuit" val="AluControl"/>
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif bold 16"/>
     <a name="circuitnamedbox" val="true"/>
     <a name="circuitvhdlpath" val=""/>
-    <wire from="(70,120)" to="(150,120)"/>
-    <wire from="(70,140)" to="(150,140)"/>
-    <wire from="(120,150)" to="(150,150)"/>
-    <wire from="(120,150)" to="(120,170)"/>
-    <wire from="(150,120)" to="(150,130)"/>
-    <wire from="(70,170)" to="(120,170)"/>
-    <comp lib="4" loc="(150,80)" name="RAM">
-      <a name="addrWidth" val="24"/>
-      <a name="dataWidth" val="32"/>
-      <a name="databus" val="bibus"/>
-      <a name="label" val="ram1"/>
-    </comp>
-    <comp lib="0" loc="(70,120)" name="Pin">
-      <a name="label" val="WE"/>
-    </comp>
-    <comp lib="0" loc="(70,140)" name="Pin">
-      <a name="label" val="OE"/>
-    </comp>
-    <comp lib="0" loc="(70,170)" name="Pin">
-      <a name="label" val="C3"/>
+    <comp lib="4" loc="(150,110)" name="ROM">
+      <a name="addrWidth" val="6"/>
+      <a name="dataWidth" val="16"/>
+      <a name="contents">addr/data: 6 16
+0
+</a>
+      <a name="label" val="rom1"/>
     </comp>
   </circuit>
 </project>
